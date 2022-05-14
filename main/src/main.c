@@ -102,9 +102,27 @@ int main(int argc, char **argv) {
   //  lv_demo_stress();
   //  lv_demo_music();
 
+  // examples
+  // lv_example_style_1();
+  // lv_example_style_2();
+  // lv_example_style_3();
+  // lv_example_style_4();
+  // lv_example_style_5();
+  // lv_example_style_6();
+  // lv_example_style_7();
+  // lv_example_style_8();
+  // lv_example_style_9();
+  // lv_example_style_10();
+  // lv_example_style_11();
+  // lv_example_style_12();
+  // lv_example_style_13();
+  // lv_example_style_14();
+  // lv_example_style_15();
+
   // my test demos
   // test_lvgl();
-  test_lvgl_1();
+  // test_lvgl_1();
+
 
   while (1) {
     /* Periodically call the lv_task handler.
