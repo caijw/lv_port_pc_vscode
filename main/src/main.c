@@ -102,7 +102,7 @@ int main(int argc, char **argv) {
   //  lv_demo_stress();
   //  lv_demo_music();
 
-  // examples
+  // style examples
   // lv_example_style_1();
   // lv_example_style_2();
   // lv_example_style_3();
@@ -118,6 +118,14 @@ int main(int argc, char **argv) {
   // lv_example_style_13();
   // lv_example_style_14();
   // lv_example_style_15();
+
+  // scroll examples
+  // lv_example_scroll_1();
+  // lv_example_scroll_2();
+  // lv_example_scroll_3();
+  // lv_example_scroll_4();
+  // lv_example_scroll_5();
+  // lv_example_scroll_6();
 
   // my test demos
   // test_lvgl();
