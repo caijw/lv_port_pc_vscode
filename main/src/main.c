@@ -127,6 +127,15 @@ int main(int argc, char **argv) {
   // lv_example_scroll_5();
   // lv_example_scroll_6();
 
+  // event examples
+  // lv_example_event_1();
+  // lv_example_event_2();
+  // lv_example_event_3();
+
+  // animation examples
+  // lv_example_anim_1();
+  lv_example_anim_2();
+
   // my test demos
   // test_lvgl();
   // test_lvgl_1();

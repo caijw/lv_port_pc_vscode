@@ -41,12 +41,9 @@ void test_lvgl_1(void) {
   lv_style_init(&style_max_width);
   lv_style_set_max_width(&style_max_width, lv_pct(50));
 
-
- /*Only its pointer is saved so must static, global or dynamically allocated */
+  /*Only its pointer is saved so must static, global or dynamically allocated */
   static const lv_style_prop_t trans_props[] = {
-      LV_STYLE_BG_OPA,
-      LV_STYLE_BG_COLOR,
-      0, /*End marker*/
+      LV_STYLE_BG_OPA, LV_STYLE_BG_COLOR, 0, /*End marker*/
   };
   static lv_style_transition_dsc_t trans1;
   lv_style_transition_dsc_init(&trans1, trans_props, lv_anim_path_ease_in,
@@ -66,13 +63,20 @@ void test_lvgl_1(void) {
   // lv_obj_add_style(btn3, &style_normal, LV_STATE_DEFAULT);
   // lv_obj_add_style(btn3, &style_pressed, LV_STATE_PRESSED);
 
+  // lv_theme_t * th = lv_theme_default_init(display,  /*Use the DPI, size, etc
+  // from this display*/
+  //                                         LV_COLOR_PALETTE_BLUE,
+  //                                         LV_COLOR_PALETTE_CYAN,   /*Primary
+  //                                         and secondary palette*/ false,
+  //                                         /*Light or dark mode*/
+  //                                         &lv_font_montserrat_10,
+  //                                         &lv_font_montserrat_14,
+  //                                         &lv_font_montserrat_18); /*Small,
+  //                                         normal, large fonts*/
 
- 
-// lv_theme_t * th = lv_theme_default_init(display,  /*Use the DPI, size, etc from this display*/ 
-//                                         LV_COLOR_PALETTE_BLUE, LV_COLOR_PALETTE_CYAN,   /*Primary and secondary palette*/
-//                                         false,    /*Light or dark mode*/ 
-//                                         &lv_font_montserrat_10, &lv_font_montserrat_14, &lv_font_montserrat_18); /*Small, normal, large fonts*/
-                                        
-// lv_disp_set_theme(display, th); /*Assign the theme to the display*/
+  // lv_disp_set_theme(display, th); /*Assign the theme to the display*/
+}
+
+void test_lvgl_2(void) {
 
 }
